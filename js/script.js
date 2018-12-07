@@ -15,6 +15,13 @@ clickButton.addEventListener('click', () => {
 })
 
 // const addElement = function () {
-//     console.log("klik");
+//     const newElement = document.createElement("div");
+//     newElement.textContent = ++numberOfNewElement;
+
+//     document.body.appendChild(newElement);
+
+//     if (numberOfNewElement % 5 === 0) {
+//         newElement.classList.add("circleBox");
+//     }
 // }
 // clickButton.addEventListener('click', addElement);
