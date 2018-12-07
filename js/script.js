@@ -1,27 +1,18 @@
 const clickButton = document.querySelector(".clickBtn");
-let numberOfNewElement = 0;
+const list = document.querySelector(".ulList");
+let numberOfNewElement = 1;
 
-// clickButton.addEventListener('click', () => {
+const createNewElementOfList = () => {
+    const newEl = document.createElement("li");
+    newEl.textContent = numberOfNewElement;
 
-//     const newElement = document.createElement("div");
-//     newElement.textContent = ++numberOfNewElement;
+    list.appendChild(newEl);
 
-//     document.body.appendChild(newElement);
-
-//     if (numberOfNewElement % 5 === 0) {
-//         newElement.classList.add("circleBox");
-//     }
-
-// })
-
-const addElement = function () {
-    const newElement = document.createElement("div");
-    newElement.textContent = ++numberOfNewElement;
-
-    document.body.appendChild(newElement);
-
-    if (numberOfNewElement % 5 === 0) {
-        newElement.classList.add("circleBox");
+    if (numberOfNewElement % 3 === 0) {
+        newEl.classList.add("biggerFont");
     }
 
+    numberOfNewElement += 2;
 }
+
+clickButton.addEventListener('click', createNewElementOfList);
