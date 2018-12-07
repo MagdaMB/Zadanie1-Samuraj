@@ -25,15 +25,3 @@ const addElement = function () {
     }
 
 }
-
-// const addElement = function () {
-//     const newElement = document.createElement("div");
-//     newElement.textContent = ++numberOfNewElement;
-
-//     document.body.appendChild(newElement);
-
-//     if (numberOfNewElement % 5 === 0) {
-//         newElement.classList.add("circleBox");
-//     }
-// }
-// clickButton.addEventListener('click', addElement);
